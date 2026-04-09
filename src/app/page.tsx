@@ -10,16 +10,26 @@ const imgFrame3 =
   "https://www.figma.com/api/mcp/asset/ba5b389d-beef-4c21-acd8-240bf2074060";
 
 // Payment features assets
-const imgScreenshot1 = "https://www.figma.com/api/mcp/asset/2766ce79-c676-40c1-bf0d-d280e516d3fa";
-const imgScreenshot3 = "https://www.figma.com/api/mcp/asset/8cfb8854-3620-484b-a1b4-bd1877a676e6";
-const imgGroup = "https://www.figma.com/api/mcp/asset/f488bd63-3ee7-4f88-9ec2-e92e64e70e0d";
-const imgSpeakerCutout = "https://www.figma.com/api/mcp/asset/67ff4b60-6d33-4a33-8200-695e8ff9737b";
-const imgAntennaBands = "https://www.figma.com/api/mcp/asset/9629f533-9927-474b-804c-356cf59fe685";
-const imgScreenshot = "https://www.figma.com/api/mcp/asset/144c97a6-3d6d-4a8b-b8d6-bd991879f399";
-const imgCamera = "https://www.figma.com/api/mcp/asset/a4d60deb-f7b3-4b3c-8bb6-7d82409a2f2a";
-const imgSpeakerCutout1 = "https://www.figma.com/api/mcp/asset/2c9a6601-56d3-4481-ab1c-e489949390b1";
-const imgScreenshot2 = "https://www.figma.com/api/mcp/asset/145f3d30-8878-49c9-ad59-0b3c7f3aa0c6";
-const imgCamera1 = "https://www.figma.com/api/mcp/asset/fe2ea508-bfd5-4bf5-8239-1a4cc2d09948";
+const imgScreenshot1 =
+  "https://www.figma.com/api/mcp/asset/2766ce79-c676-40c1-bf0d-d280e516d3fa";
+const imgScreenshot3 =
+  "https://www.figma.com/api/mcp/asset/8cfb8854-3620-484b-a1b4-bd1877a676e6";
+const imgGroup =
+  "https://www.figma.com/api/mcp/asset/f488bd63-3ee7-4f88-9ec2-e92e64e70e0d";
+const imgSpeakerCutout =
+  "https://www.figma.com/api/mcp/asset/67ff4b60-6d33-4a33-8200-695e8ff9737b";
+const imgAntennaBands =
+  "https://www.figma.com/api/mcp/asset/9629f533-9927-474b-804c-356cf59fe685";
+const imgScreenshot =
+  "https://www.figma.com/api/mcp/asset/144c97a6-3d6d-4a8b-b8d6-bd991879f399";
+const imgCamera =
+  "https://www.figma.com/api/mcp/asset/a4d60deb-f7b3-4b3c-8bb6-7d82409a2f2a";
+const imgSpeakerCutout1 =
+  "https://www.figma.com/api/mcp/asset/2c9a6601-56d3-4481-ab1c-e489949390b1";
+const imgScreenshot2 =
+  "https://www.figma.com/api/mcp/asset/145f3d30-8878-49c9-ad59-0b3c7f3aa0c6";
+const imgCamera1 =
+  "https://www.figma.com/api/mcp/asset/fe2ea508-bfd5-4bf5-8239-1a4cc2d09948";
 
 function PhoneMockup() {
   return (
@@ -71,7 +81,7 @@ export default function Home() {
         <div className="w-[1000px] mx-auto pt-[48px] pb-[100px]">
           <section className="flex flex-col items-center gap-[60px] w-[679px] mx-auto">
             <div
-              className="w-[429px] h-[270px] cursor-pointer p-[20px]"
+              className="w-[449px] h-[290px] cursor-pointer p-[20px]"
               style={{ perspective: "1000px" }}
               id="card-container"
             >
@@ -186,7 +196,8 @@ export default function Home() {
                     Get Paid with Your Payment Link
                   </h3>
                   <p className="text-[20px] font-medium text-[#808385] tracking-[0.3px] font-manrope">
-                    Copy your link and send it to anyone — clients, friends, followers.
+                    Copy your link and send it to anyone — clients, friends,
+                    followers.
                   </p>
                 </div>
               </div>
@@ -252,7 +263,8 @@ export default function Home() {
                     Or Share a QR Code
                   </h3>
                   <p className="text-[20px] font-medium text-[#808385] tracking-[0.3px] font-manrope">
-                    Generate a QR code for in-person payments or to drop into your social bio.
+                    Generate a QR code for in-person payments or to drop into
+                    your social bio.
                   </p>
                 </div>
               </div>
@@ -319,7 +331,8 @@ export default function Home() {
                   They Pay Their Way
                 </h3>
                 <p className="text-[20px] font-medium text-[#808385] tracking-[0.3px] font-manrope">
-                  Sender picks what's convenient — crypto, card, or bank transfer. You receive USDT directly on your Proof Card.
+                  Sender picks what's convenient — crypto, card, or bank
+                  transfer. You receive USDT directly on your Proof Card.
                 </p>
               </div>
             </div>
