@@ -61,7 +61,7 @@ function PhoneMockup() {
 export default function Home() {
   return (
     <div className="bg-[#fbfaf4] relative min-h-screen">
-      <nav className="flex items-center justify-between px-[120px] py-[28px] w-full">
+      <nav className="flex items-center justify-between px-[20px] lg:px-[120px] py-[20px] lg:py-[28px] w-full">
         <div className="h-[20px] w-[118px] relative">
           <Image
             alt="Proof logo"
@@ -71,17 +71,17 @@ export default function Home() {
             sizes="118px"
           />
         </div>
-        <button className="bg-[#00070e] text-[#dcff9b] px-6 py-2 rounded-full font-semibold text-[20px] tracking-[-0.1px] transition-opacity hover:opacity-90">
+        <button className="bg-[#00070e] text-[#dcff9b] px-4 lg:px-6 py-2 rounded-full font-semibold text-[16px] lg:text-[20px] tracking-[-0.1px] transition-opacity hover:opacity-90">
           Download
         </button>
       </nav>
 
       <main className="relative overflow-hidden">
         {/* Hero Section */}
-        <div className="w-[1000px] mx-auto pt-[48px] pb-[100px]">
-          <section className="flex flex-col items-center gap-[60px] w-[679px] mx-auto">
+        <div className="w-full max-w-[1000px] mx-auto pt-[48px] pb-[100px] px-[20px] lg:px-0">
+          <section className="flex flex-col items-center gap-[40px] lg:gap-[60px] w-full lg:w-[679px] mx-auto">
             <div
-              className="w-[449px] h-[290px] cursor-pointer p-[20px]"
+              className="w-[280px] lg:w-[449px] h-[180px] lg:h-[290px] cursor-pointer p-[20px]"
               style={{ perspective: "1000px" }}
               id="card-container"
             >
@@ -100,55 +100,55 @@ export default function Home() {
                   }}
                 ></div>
 
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[133px] h-[134px]">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80px] lg:w-[133px] h-[80px] lg:h-[134px]">
                   <Image
                     alt="Card design"
                     src={imgVector}
                     fill
                     className="object-contain"
-                    sizes="133px"
+                    sizes="(max-width: 1024px) 80px, 133px"
                   />
                 </div>
-                <div className="absolute bottom-[20px] right-[20px] flex items-center">
-                  <div className="w-[39px] h-[39px] -mr-[15px] relative">
+                <div className="absolute bottom-[15px] lg:bottom-[20px] right-[15px] lg:right-[20px] flex items-center">
+                  <div className="w-[28px] lg:w-[39px] h-[28px] lg:h-[39px] -mr-[10px] lg:-mr-[15px] relative">
                     <Image
                       alt="Circle"
                       src={imgEllipse1}
                       fill
                       className="object-contain"
-                      sizes="39px"
+                      sizes="(max-width: 1024px) 28px, 39px"
                     />
                   </div>
-                  <div className="w-[39px] h-[39px] relative">
+                  <div className="w-[28px] lg:w-[39px] h-[28px] lg:h-[39px] relative">
                     <Image
                       alt="Circle"
                       src={imgEllipse1}
                       fill
                       className="object-contain"
-                      sizes="39px"
+                      sizes="(max-width: 1024px) 28px, 39px"
                     />
                   </div>
                 </div>
-                <div className="absolute top-[19px] left-[19px] w-[90px] h-[15px]">
+                <div className="absolute top-[15px] lg:top-[19px] left-[15px] lg:left-[19px] w-[70px] lg:w-[90px] h-[12px] lg:h-[15px]">
                   <Image
                     alt="Logo"
                     src={imgVector1}
                     fill
                     className="object-contain"
-                    sizes="90px"
+                    sizes="(max-width: 1024px) 70px, 90px"
                   />
                 </div>
-                <p className="absolute bottom-[19px] left-[19px] text-[#252525] text-[18px] font-normal">
+                <p className="absolute bottom-[15px] lg:bottom-[19px] left-[15px] lg:left-[19px] text-[#252525] text-[14px] lg:text-[18px] font-normal">
                   •••• 1909
                 </p>
               </div>
             </div>
 
             <div className="text-center w-full">
-              <h1 className="text-[56px] font-bold text-primary-text leading-[80px] tracking-[-0.4px] mb-[16px] font-manrope">
+              <h1 className="text-[36px] lg:text-[56px] font-bold text-primary-text leading-[44px] lg:leading-[80px] tracking-[-0.4px] mb-[12px] lg:mb-[16px] font-manrope">
                 Spend Crypto Like Cash
               </h1>
-              <p className="text-[22px] font-medium text-secondary-text tracking-[0.3px] font-manrope">
+              <p className="text-[18px] lg:text-[22px] font-medium text-secondary-text tracking-[0.3px] font-manrope px-4 lg:px-0">
                 A virtual Mastercard that turns your crypto into everyday
                 spending. Pay online, tap in stores with Apple Pay and Google
                 Pay.
@@ -157,45 +157,45 @@ export default function Home() {
           </section>
 
           {/* CTA Section */}
-          <section className="flex flex-col items-center gap-[16px] w-[679px] mx-auto mt-[50px]">
-            <button className="bg-[#00070e] text-[#dcff9b] px-[24px] py-[15px] rounded-full font-semibold text-[24px] tracking-[-0.1px] font-manrope transition-opacity hover:opacity-90">
+          <section className="flex flex-col items-center gap-[12px] lg:gap-[16px] w-full lg:w-[679px] mx-auto mt-[30px] lg:mt-[50px]">
+            <button className="bg-[#00070e] text-[#dcff9b] px-[20px] lg:px-[24px] py-[12px] lg:py-[15px] rounded-full font-semibold text-[20px] lg:text-[24px] tracking-[-0.1px] font-manrope transition-opacity hover:opacity-90">
               Download
             </button>
-            <p className="text-[18px] font-medium text-secondary-text tracking-[0.3px] font-manrope text-center">
+            <p className="text-[16px] lg:text-[18px] font-medium text-secondary-text tracking-[0.3px] font-manrope text-center">
               iOS & Android available
             </p>
           </section>
 
           {/* But First, Get Paid Section */}
-          <section className="text-center mt-[200px] mb-[113px]">
-            <h2 className="text-[48px] font-bold text-primary-text leading-[56px] tracking-[-0.2px] font-manrope">
+          <section className="text-center mt-[120px] lg:mt-[200px] mb-[60px] lg:mb-[113px]">
+            <h2 className="text-[32px] lg:text-[48px] font-bold text-primary-text leading-[40px] lg:leading-[56px] tracking-[-0.2px] font-manrope">
               But First, Get Paid
             </h2>
           </section>
 
           {/* Payment Features Grid */}
-          <section className="flex gap-[20px] items-end mb-[200px]">
-            <div className="flex flex-col gap-[20px] w-[456px] h-[707px]">
+          <section className="flex flex-col lg:flex-row gap-[20px] lg:items-end mb-[200px] lg:mb-[200px] mb-[120px]">
+            <div className="flex flex-col gap-[20px] w-full lg:w-[456px] lg:h-[707px]">
               {/* Payment Link Card */}
-              <div className="bg-black/[0.03] rounded-[23px] flex-1 relative overflow-hidden">
+              <div className="bg-black/[0.03] rounded-[23px] flex-1 lg:flex-1 h-[300px] lg:h-auto relative overflow-hidden">
                 {/* Green icon circle */}
-                <div className="absolute top-[30px] left-[24px] bg-[#dcff9b] rounded-full w-[100px] h-[100px] flex items-center justify-center">
-                  <div className="w-[56px] h-[56px] relative">
+                <div className="absolute top-[20px] lg:top-[30px] left-[20px] lg:left-[24px] bg-[#dcff9b] rounded-full w-[70px] lg:w-[100px] h-[70px] lg:h-[100px] flex items-center justify-center">
+                  <div className="w-[40px] lg:w-[56px] h-[40px] lg:h-[56px] relative">
                     <Image
                       alt="Link icon"
                       src={imgGroup}
                       fill
                       className="object-contain"
-                      sizes="56px"
+                      sizes="(max-width: 1024px) 40px, 56px"
                     />
                   </div>
                 </div>
                 {/* Text content */}
-                <div className="absolute bottom-[24px] left-[24px] w-[398px]">
-                  <h3 className="text-[24px] font-semibold text-[#00070e] mb-[10px] font-manrope tracking-[0.3px]">
+                <div className="absolute bottom-[24px] left-[24px] w-[calc(100%-48px)] lg:w-[398px]">
+                  <h3 className="text-[20px] lg:text-[24px] font-semibold text-[#00070e] mb-[8px] lg:mb-[10px] font-manrope tracking-[0.3px]">
                     Get Paid with Your Payment Link
                   </h3>
-                  <p className="text-[20px] font-medium text-[#808385] tracking-[0.3px] font-manrope">
+                  <p className="text-[16px] lg:text-[20px] font-medium text-[#808385] tracking-[0.3px] font-manrope">
                     Copy your link and send it to anyone — clients, friends,
                     followers.
                   </p>
@@ -203,9 +203,9 @@ export default function Home() {
               </div>
 
               {/* QR Code Card */}
-              <div className="bg-black/[0.03] rounded-[23px] h-[398px] relative overflow-hidden">
+              <div className="bg-black/[0.03] rounded-[23px] h-[320px] lg:h-[398px] relative overflow-hidden">
                 {/* iPhone showing QR code */}
-                <div className="absolute top-[-58.1%] left-1/2 transform -translate-x-1/2 w-[233.749px] h-[479.956px]">
+                <div className="absolute top-[-40%] lg:top-[-58.1%] left-1/2 transform -translate-x-1/2 w-[180px] lg:w-[233.749px] h-[360px] lg:h-[479.956px]">
                   <div className="relative w-full h-full">
                     {/* Phone base */}
                     <div className="absolute inset-[0_0.7%] bg-gradient-to-b from-[#f9f6f3] to-[#bbb7b3] rounded-[72px] pointer-events-none shadow-[inset_0px_0px_0.591px_1.087px_rgba(0,0,0,0.2),inset_0px_0px_0.887px_1.087px_rgba(0,0,0,0.4)]" />
@@ -258,11 +258,11 @@ export default function Home() {
                   </div>
                 </div>
                 {/* Text content */}
-                <div className="absolute bottom-[24px] left-[24px] w-[398px]">
-                  <h3 className="text-[24px] font-semibold text-[#00070e] mb-[10px] font-manrope tracking-[0.3px]">
+                <div className="absolute bottom-[24px] left-[24px] w-[calc(100%-48px)] lg:w-[398px]">
+                  <h3 className="text-[20px] lg:text-[24px] font-semibold text-[#00070e] mb-[8px] lg:mb-[10px] font-manrope tracking-[0.3px]">
                     Or Share a QR Code
                   </h3>
-                  <p className="text-[20px] font-medium text-[#808385] tracking-[0.3px] font-manrope">
+                  <p className="text-[16px] lg:text-[20px] font-medium text-[#808385] tracking-[0.3px] font-manrope">
                     Generate a QR code for in-person payments or to drop into
                     your social bio.
                   </p>
@@ -271,9 +271,9 @@ export default function Home() {
             </div>
 
             {/* They Pay Their Way Card */}
-            <div className="bg-black/[0.03] rounded-[23px] flex-1 h-[707px] relative overflow-hidden">
+            <div className="bg-black/[0.03] rounded-[23px] flex-1 h-[400px] lg:h-[707px] relative overflow-hidden">
               {/* Large iPhone showing payment options */}
-              <div className="absolute top-[-199px] left-1/2 transform -translate-x-1/2 w-[348.188px] h-[715px]">
+              <div className="absolute top-[-120px] lg:top-[-199px] left-1/2 transform -translate-x-1/2 w-[220px] lg:w-[348.188px] h-[450px] lg:h-[715px]">
                 <div className="relative w-full h-full">
                   {/* Phone base */}
                   <div className="absolute inset-[0_0.7%] bg-gradient-to-b from-[#f9f6f3] to-[#bbb7b3] rounded-[72px] pointer-events-none shadow-[inset_0px_0px_1.311px_1.619px_rgba(0,0,0,0.2),inset_0px_0px_1.967px_1.619px_rgba(0,0,0,0.4)]" />
@@ -326,11 +326,11 @@ export default function Home() {
                 </div>
               </div>
               {/* Text content */}
-              <div className="absolute bottom-[24px] left-[24px] w-[398px]">
-                <h3 className="text-[24px] font-semibold text-[#00070e] mb-[10px] font-manrope tracking-[0.3px]">
+              <div className="absolute bottom-[24px] left-[24px] w-[calc(100%-48px)] lg:w-[398px]">
+                <h3 className="text-[20px] lg:text-[24px] font-semibold text-[#00070e] mb-[8px] lg:mb-[10px] font-manrope tracking-[0.3px]">
                   They Pay Their Way
                 </h3>
-                <p className="text-[20px] font-medium text-[#808385] tracking-[0.3px] font-manrope">
+                <p className="text-[16px] lg:text-[20px] font-medium text-[#808385] tracking-[0.3px] font-manrope">
                   Sender picks what's convenient — crypto, card, or bank
                   transfer. You receive USDT directly on your Proof Card.
                 </p>
